@@ -1,0 +1,6 @@
+# Configs (INCLUDES YOUR FRIKIN CLIENT TOKEN AND USER ID)
+*.ini
+
+# Screw you, pycache
+extensions/__pycache__
+extensions/utils/__pycache__
