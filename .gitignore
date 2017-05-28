@@ -1,5 +1,7 @@
 # Configs (INCLUDES YOUR FRIKIN CLIENT TOKEN AND USER ID)
 info.ini
+away.ini
+*.ini
 
 # Screw you, pycache
 extensions/__pycache__
