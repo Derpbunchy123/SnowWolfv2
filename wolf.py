@@ -15,8 +15,8 @@ bot = commands.Bot(command_prefix=prefix, description=desc)
 
 @bot.event
 async def on_command_error(error, ctx):
-	if isinstance(error, commands.CommandNotFound):
-		await bot.add_reaction(ctx.message, "\N{NEGATIVE SQUARED CROSS MARK}")
+	await bot.add_reaction(ctx.message, "\N{NEGATIVE SQUARED CROSS MARK}")
+
 @bot.event
 async def on_ready():
 	print("Logged into Discord: ")
@@ -48,7 +48,7 @@ def getToken():
 		return Config["login"]["token"]
 
 if __name__ == "__main__":
-	print("Logging in with Token: " + getToken())
+	# print("Logging in with Token: " + getToken())
 	token = getToken()
 	bot.client_id = token
 	#bot.run(token)
