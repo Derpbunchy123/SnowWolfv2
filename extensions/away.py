@@ -33,7 +33,6 @@ class Away:
 			mtn[mention] = True
 		if message.author.id != self.bot.user.id:
 			for author in mtn:
-				print(author.display_name)
 				try:
 					Config.read("away.ini")
 					if isinstance(Config["away"][str(author.id)], str):
